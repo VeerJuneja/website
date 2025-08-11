@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veer Juneja</title>
+    <meta name="description" content="The personal website of Veer Juneja. Projects, writing, and ways to get in touch." />
+
+    <meta property="og:title" content="Veer Juneja" />
+    <meta property="og:description" content="Projects, writing, and ways to get in touch." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="color-scheme" content="light dark" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="site-header">
+        <h1>Veer Juneja</h1>
+        <p class="tagline">I build things on the internet.</p>
+        <nav class="nav">
+          <a href="#projects">Projects</a>
+          <span class="sep">·</span>
+          <a href="#writing">Writing</a>
+          <span class="sep">·</span>
+          <a href="#about">About</a>
+          <span class="sep">·</span>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I’m a product‑minded engineer who enjoys shipping simple, durable
+          software. I like small teams, clear writing, and tools that get out of
+          the way.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <ul class="list">
+          <li>
+            <a class="item-title" href="#" rel="noopener">Project One</a>
+            <span class="item-desc">lightweight tool that turns ideas into working prototypes fast.</span>
+          </li>
+          <li>
+            <a class="item-title" href="#" rel="noopener">Project Two</a>
+            <span class="item-desc">tiny service that watches important things and pings you when they change.</span>
+          </li>
+          <li>
+            <a class="item-title" href="#" rel="noopener">Project Three</a>
+            <span class="item-desc">an opinionated starter for clean, minimal web apps.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="writing" class="section">
+        <h2>Writing</h2>
+        <ul class="list">
+          <li>
+            <a class="item-title" href="#">On choosing what to build</a>
+            <span class="item-desc">notes on momentum, leverage, and taste.</span>
+          </li>
+          <li>
+            <a class="item-title" href="#">The joy of small software</a>
+            <span class="item-desc">why constraints make better products.</span>
+          </li>
+          <li>
+            <a class="item-title" href="#">Practical simplicity</a>
+            <span class="item-desc">how to ship less code and more value.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>
+          Email <a href="mailto:hey@veerjuneja.com">hey@veerjuneja.com</a>
+          <span class="sep">·</span>
+          <a href="https://github.com/" rel="me noopener" target="_blank">GitHub</a>
+          <span class="sep">·</span>
+          <a href="https://www.linkedin.com/" rel="me noopener" target="_blank">LinkedIn</a>
+          <span class="sep">·</span>
+          <a href="https://x.com/" rel="me noopener" target="_blank">X</a>
+        </p>
+      </section>
+
+      <footer class="site-footer">
+        <p>© <span id="year">2025</span> Veer Juneja</p>
+      </footer>
+    </main>
+
+    <script>
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

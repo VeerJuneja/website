@@ -1,0 +1,120 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --link: #0a58ca;
+  --border: #e6e6e6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0b;
+    --text: #eaeaea;
+    --muted: #a5a5a5;
+    --link: #4da3ff;
+    --border: #222222;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  max-width: 720px;
+  padding: 24px;
+  margin: 48px auto 80px;
+}
+
+.site-header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.tagline {
+  margin: 0 0 12px 0;
+  color: var(--muted);
+}
+
+.nav {
+  margin: 0 0 24px 0;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.sep {
+  padding: 0 8px;
+  color: var(--muted);
+}
+
+.section {
+  margin: 28px 0 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.section h2 {
+  font-size: 20px;
+  margin: 0 0 12px 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin: 10px 0;
+}
+
+.item-title {
+  color: var(--text);
+  text-underline-offset: 2px;
+}
+
+.item-title:hover {
+  color: var(--link);
+}
+
+.item-desc {
+  display: block;
+  color: var(--muted);
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  margin-top: 40px;
+  color: var(--muted);
+} 
